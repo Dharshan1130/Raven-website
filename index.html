@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+html { scroll-behavior: smooth; }
+
+/* REVEAL ANIMATION */
+.reveal {
+  opacity:0;
+  transform:translateY(40px);
+  transition:.8s;
+}
+.reveal.active {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* CARDS */
+.card {
+  transition:.4s;
+}
+.card:hover {
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* BUTTONS */
+.btn-primary {
+  transition:.3s;
+}
+.btn-primary:hover {
+  transform:scale(1.1);
+  box-shadow:0 0 20px rgba(13,110,253,.6);
+}
+
+/* CAROUSEL ZOOM */
+.carousel-item img {
+  animation: zoom 12s infinite alternate;
+}
+@keyframes zoom {
+  from {transform:scale(1);}
+  to {transform:scale(1.08);}
+}
+</style>
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Raven1.jpg" alt="logo" width="80"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.yamaha-motor-india.com/yamaha-mt-15-v2.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.yamaha-motor-india.com/service-home.html">Sevices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.yamaha-motor-india.com/spare-parts.html">Parts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.yamaha-motor-india.com/dealer-network.html">Dealers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.yamaha-motor-india.com/yamaha-buyersguide.html"> Buyer's guide</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--carousel-->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img4.jpeg" class="d-block w-100" alt="img4.jpeg">
+    </div>
+    <div class="carousel-item">
+      <img src="img1.jpeg" class="d-block w-100" alt="img1.jpeg">
+    </div>
+    <div class="carousel-item">
+      <img src="img3.jpeg" class="d-block w-100" alt="img3.jpeg">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Main container-->
+<div class="container"></div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+</div>
+<h1 class="text-center p=5 mb-5 mt-5">Yamaha Motors</h1>
+<p class="text-center mb-5"></p>
+<div class="w-100 bg-dark-subtle p-5 mb-5">
+    <p>
+   Yamaha is a well-known Japanese company famous for making musical instruments, audio equipment, and motor vehicles. It was founded in 1887 by Torakusu Yamaha, who first started by repairing and building pianos and organs. Over time, the company expanded into many types of instruments such as guitars, drums, keyboards, and wind instruments, becoming one of the world’s largest music instrument manufacturers. Yamaha is also recognized for its high-quality sound systems and professional audio technology used in studios and concerts. A separate division, Yamaha Motor Company, produces motorcycles, marine engines, and other vehicles. The brand is known for innovation, quality, and reliability. Today, Yamaha products are sold worldwide and are widely used by beginners and professionals alike in both music and motorsports.
+    </p>
+    <!-- end of the container-->
+    <a href="https://www.iyamaha.co.in/" type="button" class="btn btn-primary btn-lg">Click for more information</a>
+</div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+<h2 id="destination" class="fs-1 p-5 mt-5 mb-5 text-center">Yamaha MT-15</h2>
+<h6 class="text-center"><p>A popular sporty streetfighter bike in India</p></h6>
+</div>
+<div class="row">
+    <div class="col">
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Snapchat-1695069785.jpg.jpeg" class="card-img-top" alt="Naked bike">
+        <div class="card-body">
+          <h5 class="card-title">Mt-15</h5>
+          <p class="card-text">
+          Mt-15 usually offer a comfortable upright riding position instead of the leaned-forward posture common in sport bikes, making them good for both city commuting and fun rides on highways. They balance performance and comfort, with strong engines, agile handling, and eye-catching styling that appeals to many riders.known for reliability and sporty performance across engine sizes.
+          </p>
+          <a href="https://www.iyamaha.co.in/toolkit/yamaha-mt-15-ver-2.0-bike-en-in.htm" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Snapchat-1142083143.jpg.jpeg" class="card-img-top" alt="engine">
+        <div class="card-body">
+          <h5 class="card-title">Engine</h5>
+          <p class="card-text">
+            The Yamaha MT-15 is powered by a 155 cc, liquid-cooled, single-cylinder, 4-stroke engine. It uses fuel injection for smooth throttle response and better efficiency. The engine features Variable Valve Actuation (VVA) technology, which helps deliver strong performance at both low and high speeds. It produces around 18 PS of power and about 14 Nm of torque, giving quick acceleration and sporty performance. 
+          </p>
+          <a href="https://www.iyamaha.co.in/toolkit/yamaha-mt-15-ver-2.0-bike-specifications-en-in.htm" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Snapchat-1778479107.jpg.jpeg" class="card-img-top" alt="Fork">
+        <div class="card-body">
+          <h5 class="card-title">Front fork</h5>
+          <p class="card-text">
+            The front fork of the Yamaha MT-15 is an inverted (USD) telescopic fork, which is stronger and more rigid than regular forks. This design improves stability, handling, and steering precision, especially during fast riding and sharp turns. The fork helps absorb bumps and road shocks, giving the rider a smoother and more controlled ride. Its robust build also enhances braking performance and overall confidence while riding. The MT-15’s front fork is one of the features that gives the bike a sporty feel and better road grip.
+          </p>
+          <a href="https://www.iyamaha.co.in/toolkit/yamaha-mt-15-ver-2.0-bike-specifications-en-in.htm" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+        <!-- Card 4 -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Snapchat-1650935295.jpg.jpeg" class="card-img-top" alt="Tank">
+        <div class="card-body">
+          <h5 class="card-title">Tank</h5>
+          <p class="card-text">
+            The fuel tank of the Yamaha MT-15 is designed to match the bike’s aggressive street-fighter look. It has a sculpted and muscular shape that not only adds to the bike’s sporty appearance but also helps the rider grip the bike comfortably with the knees while riding. The tank has a capacity of around 10–11 litres, giving a good balance between weight and riding range for city and highway use. Its design places the weight low and centered, which helps with balance and handling. The tank’s finish and styling are coordinated with the bike’s overall sharp graphics.
+          </p>
+          <a href="https://www.iyamaha.co.in/toolkit/yamaha-mt-15-ver-2.0-bike-specifications-en-in.htm" class="btn btn-primary">More info</a>
+        </div>
+  </div>
+</div>
+<div class="container"></div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+</div>
+<h1 class="text-center p=5 mb-5 mt-5">Key details</h1>
+<p class="text-center mb-5"></p>
+<div class="w-100 bg-dark-subtle p-5 mb-5">
+    <p>
+   🏍️ Yamaha MT-15 – Key Details
+
+<p>Type: Naked street motorcycle</p>
+<p>Engine: 155 cc liquid-cooled, 4-stroke, SOHC single-cylinder with Variable Valve Actuation (VVA)</p>
+<p>Power: Around 18.4 PS</p>
+<p>Torque: About 14.1 Nm</p>
+<p>Transmission: 6-speed gearbox with assist & slipper clutch</p>
+<p>Fuel Tank: ~10 litres</p>
+<p>Weight: ~141 kg</p>
+<p>Seat Height: ~810 mm</p>
+</p>Ground Clearance: ~170 mm</p>
+
+🛠️ Features
+
+<p>Bluetooth-connected TFT display (on higher variants) with navigation & Y-Connect app features like maintenance alerts.</p>
+
+<p>Traction control system for safer rides.</p>
+
+<p>Front & rear disc brakes with dual-channel ABS.</p>
+
+<p>Upside-down front forks and link-type rear suspension.</p>
+
+<p>LED headlights, taillights & fully digital instrument cluster.</p>
+
+🚦 Performance & Ride
+
+<P>Smooth power delivery ideal for city and twisty roads.</P>
+
+<p>Lightweight build makes it easy to handle.</p>
+
+<p>Great mileage for its segment (real-world ~45–50 km/l)</p>
+    </p>
+      <!--contact us-->
+  <div class="w-100 bg-dark-subtle p-5 mb-5">
+    <!--Contact us-->
+<h2 id="Destination" class="fs-1 p-5 mt-5 mb-5 text-center">User manual</h2>
+<div class="w-100 bg-dark-subtle p-5 mb-5">
+    <p>
+    <p>The Yamaha user manual explains that the bike is a performance-oriented street motorcycle designed for responsible, trained riders, and it emphasizes learning all controls and safety practices before riding. It begins by stressing the importance of wearing proper protective gear such as a certified helmet, gloves, sturdy shoes, and fitted clothing, and reminds riders to follow traffic laws and avoid distractions. The manual describes the riding posture and balance needed for control, advising riders to keep both hands on the handlebars and feet on the pegs while the motorcycle is moving, and to avoid carrying more weight or passengers than recommended. It encourages new riders to spend time getting familiar with the motorcycle while stationary, including understanding the switches, levers, gear pattern, and display panel.</p>
+    <p>The controls section explains how the handlebar switches operate the lights, indicators, horn, starter, and engine stop function, while the clutch lever, throttle grip, brake lever, brake pedal, and gear shifter control motion and speed. The digital instrument display provides key riding information such as speed, fuel level, engine RPM, gear position, trip meters, and warning lights, and the manual advises riders to pay attention to warning indicators and not ignore them if they remain on. Starting procedures are described carefully, including turning the ignition on, confirming neutral, pulling in the clutch, and starting the engine without opening the throttle too much, especially when cold. Riders are told to let the engine idle briefly after startup and avoid aggressive revving.</p>  
+    <p>Overall, the manual presents the MT-15 as a machine that delivers strong performance when used correctly and maintained properly, and it repeatedly reinforces that safe riding habits, routine inspections, and scheduled servicing are the key responsibilities of every owner.</p>  
+  </p>
+<button type="button" class="btn btn-primary btn-lg"><a href="https://bikebecho.com/gear/wp-content/uploads/sites/3/2024/11/Yamaha-MT-15-owner-manual.pdf" class="text-white text-decoratin-none"> Open user manual</a></button>
+</div>
+    <!--About-->
+<h2 id="destination" class="fs-1 p-5 mt-5 mb-5 text-center">About</h2>
+<div class="row">
+  <div class="col-6">
+    <div class="p-3 mb-2 bg-secondary text-white">Products</div>
+    <p>
+    <p>Tank pads (protect paint from scratches)</p>
+
+    <p>Radiator guards (protects radiator from debris)</p>
+
+    <p>Handlebar USB charger / mobile mount for devices</p>
+
+    <p>Skid plates for under-engine protection</p>
+    </p>
+  </div>
+<div class="col-6">
+    <div class="p-3 mb-2 bg-secondary text-white">Ex-showroom prices(india)</div>
+    <p>
+      <p>Standard Variant: ~₹1,69,000 – ₹1,70,000 (ex-showroom) 📍</p>
+
+<p>Metallic Black / Other Colours: ~₹1,69,550 (ex-showroom) 📍</p>
+
+<p>Deluxe (DLX) Variant: ~₹1,80,000 – ₹1,80,500 (ex-showroom) 📍</p>
+    </p>
+  </div>
+  <div class="col-6">
+    <div class="p-3 mb-2 bg-secondary text-white">Rules</div>
+    <p>
+      <p> Ride smoothly — MT-15 is powerful for a 155cc bike</p>
+
+<p> Don’t rev hard when engine is cold</p>
+
+<p>Use both brakes together for better control</p>
+
+<p> Keep both hands on handlebars at all times</p>
+
+<p> Maintain safe distance from other vehicles</p>
+
+<p> Avoid sudden sharp turns at high speed</p>
+    </p>
+  </div>
+    <div class="col-6">
+    <div class="p-3 mb-2 bg-secondary text-white">Services</div>
+    <p>
+    <P>Engine oil change</P>
+
+<p>General inspection</p>
+
+<p>Chain cleaning & lubrication</p>
+
+<p>Bolt & nut tightening</p>
+
+<p>Brake check</p>
+
+<p>Clutch & throttle adjustment</p>
+    </p>
+  </div>
+
+  <!--contact us-->
+  <div class="w-100 bg-dark-subtle p-5 mb-5">
+    <!--Contact us-->
+<h2 id="Destination" class="fs-1 p-5 mt-5 mb-5 text-center"> Contact us</h2>
+<div class="w-100 bg-dark-subtle p-5 mb-5">
+    <p>
+      For more information regarding Yamaha vehicles, service bookings, spare parts, warranty support, or maintenance inquiries, please contact your nearest authorized Yamaha Service Center. The service team can guide you with appointment scheduling, service charges, required documents, and repair timelines. You may also reach out through the official Yamaha website or customer support channels to get accurate and up-to-date assistance. Yamaha representatives will help ensure your vehicle receives proper care and professional service.
+</p>
+<p>
+The Contact Us for more vehicle details section explains that customers who want accurate and up-to-date information about Yamaha vehicles should reach out directly through official support channels or authorized service centers. It highlights that trained representatives and service advisors are available to help with questions about vehicle models, specifications, features, pricing, service schedules, spare parts, warranty coverage, and maintenance requirements. Customers can use the official Yamaha website, customer care portals, or nearby dealerships to book service appointments, request inspections, and get technical guidance. The section emphasizes that authorized centers provide reliable information, genuine parts, and professional support, ensuring the vehicle stays safe, efficient, and properly maintained. It also notes that contacting official sources is the best way to receive trustworthy answers, timely assistance, and correct procedures for repairs, upgrades, and ownership support related to Yamaha motorcycles and other vehicles.
+</p>
+<button type="button" class="btn btn-primary btn-lg"><a href="https://www.yamaha-motor-india.com/" class="text-white text-decoration-none"> Contact us  for more Deatils</a></button>
+</div>
+<h2 id="Destination" class="fs-1 p-5 mt-5 mb-5 text-center">What's new?</h2>
+<img src="2026-MotoGP-Calendar.jpg" class="d-block w-100" alt="motogp">
+<footer class="bg-dark mt-5 p-5 text-white text-center">
+    <p>&copy; book your vechicle</p>
+    <p><a href="Raven1130@gmail.com"  class="text-white"> Contact via Email </a></p>
+    <p><a href="080-2556-9621" class="text-white">contact via Number<a></p>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
